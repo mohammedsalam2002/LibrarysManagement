@@ -1,0 +1,19 @@
+<div id="bookform" class="card card-primary collapse">
+    <div class="card-header">
+      <h3 class="card-title">اضافة كتاب</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form method="POST" enctype="multipart/form-data"  > 
+      {% csrf_token %}
+      <div class="card-body"> 
+       
+        {{admin2}}
+
+      </div>
+      <!-- /.card-body -->
+      <div class="card-footer">
+        <button type="submit" class="btn btn-primary">اضافة</button>
+      </div>
+    </form>
+</div>
